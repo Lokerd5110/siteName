@@ -1,0 +1,13 @@
+<div class="popular">
+    <div class="container">
+        <h2>Популярное</h2>
+    </div>
+    <div class="container">
+        <a class="arrow-left" href="#"><img src="/public/img/arrow_left_white.png" alt="Стрелка влево"></a>
+        <a class="arrow-right" href="#"><img src="/public/img/arrow_right_white.png" alt="Стрелка вправо"></a>
+        <% for(let i = 0; i < 4; i++) { %>
+            <%- include('../blocks/book-card.ejs') %>    
+        <% } %>
+    </div>
+</div>
+<link rel="stylesheet" href="/public/css/popular.css">

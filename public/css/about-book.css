@@ -1,0 +1,172 @@
+.about-book {
+    display: grid;
+    grid-template-areas: 
+    "img name name"
+    "img rait rait"
+    "img tab bt"
+    "text text text"
+    ;
+    grid-template-columns: 347px auto 283px;
+    gap: 30px;
+    color: #2F2F2F;
+}
+
+.about-book .picture {
+    grid-area: img;
+
+}
+
+.about-book .rating{
+    grid-area: rait;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    height: 34px;
+    border-bottom: 1px solid #BFBFBF;
+}
+
+.about-book .stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+
+.about-book .stars p {
+    margin-right: 20px;
+}
+
+.about-book .autor-and-name {
+    align-self: flex-end;
+    grid-area: name;
+}
+
+.about-book .book-name {
+    font-size: 34px;
+    line-height: 40px;
+}
+
+.about-book .autor-name {
+    font-size: 26px;
+    line-height: 30px;  
+}
+
+.about-book .general-mark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 68px;
+}
+
+.about-book .rating .rating-number{
+    font-size: 34px;
+    line-height: 40px;
+}
+
+.about-book .stars p{
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.about-book .number-of-bought p{
+    font-size: 22px;
+    line-height: 26px;
+    
+    color: rgba(111, 111, 111, 0.85);
+}
+
+.about-book .table-about {
+    grid-area: tab;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    border-collapse: separate;
+    border-spacing: 24px 58px;
+}
+
+.about-book .table-about td {
+    padding-right: 48px;
+    padding-bottom: 16px;
+}
+
+.about-book .table-about td:first-child {
+        color: #878787;
+}
+
+.about-book .table-about td:last-child {
+    color: #2F2F2F;
+}
+
+.about-book .description {
+    grid-area: text;
+}
+
+.about-book .description-name {
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #5F5F5F;
+}
+
+.about-book .description-concretely {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.about-book .button-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: rgba(0, 141, 124, 0.35);
+    padding: 24px 40px;
+    border-radius: 15px;
+    height: 200px;
+}
+
+.about-book .button-menu .in-basket {  
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: 300;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+    background-color:#008D7C;
+}
+
+.about-book .button-menu .btn-like {
+position: absolute;
+    right: 40px;
+    top: 15px;
+}
+
+.about-book .button-menu .availability {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 125px;
+    height: 19px;
+}
+
+.about-book .button-menu .availability p{
+    font-weight: 300;
+    font-size: 20px;
+    color: #006D5C;
+}
+
+.about-book .button-menu .price {
+    font-size: 34px;
+    line-height: 40px;
+
+    color: #2F2F2F;
+}
+

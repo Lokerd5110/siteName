@@ -1,0 +1,90 @@
+
+.book-card{
+display: flex;
+position: relative;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box;
+width: 245px;
+height: 425px;
+padding: 19px;
+padding-top: 0;
+}
+
+.book-card div{
+width: 100%;
+}
+
+.book-card a img{
+margin-bottom: 5px;
+}
+
+.book-card .book-name {   
+    text-align: left;
+    
+    color: #2F2F2F;
+}
+
+.book-card .autor-name{
+    text-align: left;
+
+    font-size: 11px;
+    line-height: 13px;
+    color: #5E5E5E;
+}
+
+.book-card .in-basket {  
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    width: 205px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    
+    font-weight: 300;
+    
+    color: #FFFFFF;
+    background-color:#008D7C;
+}
+
+.book-card .price-in-card{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    width: 39px;
+    padding: 4px 0;
+    margin-left: 5px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.book-card .in-mark {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    width: 205px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+
+    font-weight: 300;
+    
+    color: #000000;
+    background-color: rgba(0, 141, 124, 0.35);
+}
+
+.book-card .stroke{
+    position: absolute;
+    width: 1px;
+    height: 310px;
+    background-color: rgba(0, 0, 0, 0.35);
+    right: -37px;
+    top: 57px;
+}

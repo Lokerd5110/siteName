@@ -1,0 +1,80 @@
+.new-arrive {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    padding: 40px;
+    margin-bottom: 60px;
+}
+
+.new-arrive h3 {
+    margin-bottom: 24px;
+    width: 227px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+}
+
+.new-arrive p {
+    margin-bottom: 48px;
+
+    width: 482px;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.new-arrive button{
+    width: 282px;
+    height: 55px;  
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    border: none;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+
+.new-arrive .background * {
+    z-index: -1;
+    position: absolute;
+    height: 450px;
+    top: 0;
+    border-radius: 30px;
+}
+
+.background img {
+    z-index: -1;
+    right: 0;
+    width: 70%;
+    object-fit: cover;
+}
+
+.background .gradient {
+    width: 100%;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0, 141, 124, 1) 0, rgba(0, 141, 124, 1) 35%, transparent 100%);
+}
+
+.new-arrive .content {
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+.new-arrive .arrow-left {
+    position: absolute;
+    left: -110px;
+    top: 191px;
+}
+.new-arrive .arrow-right {
+    position: absolute;
+    right: -110px;
+    top: 191px;
+}
+

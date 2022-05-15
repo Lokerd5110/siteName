@@ -1,0 +1,150 @@
+.header {
+    background-color: #008D7C;
+    margin-bottom: 60px;
+}
+
+.header-logo {
+    height: 90px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.header-nav li {
+    padding: 25px;
+}
+
+.header-nav li:hover {
+    background-color: #00b9a4;
+}
+
+.header-nav li:active > a{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.header-nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.header-nav li:nth-of-type(3) {
+    position: relative;
+}
+
+.header-nav .genres {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    box-sizing: border-box;
+    padding: 20px 35px;
+    min-width: 250px;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+}
+
+.header-nav li:hover .genres {
+    display: block;
+}
+
+.header-nav .genres h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.header .genres-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header .genres-list li {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.header .genres-list li:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.header .genres-list li:active a {
+    color:rgba(0, 0, 0, 0.7);
+}
+
+.header .genres-list a {
+    color: black;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search {
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 15px;
+    width: 220px;
+    height: 40px;
+    background-color: rgba(196, 196, 196, 0.3);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.search::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.search::before {
+    background: url('/public/img/search.png') no-repeat 18px 18px;
+
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search-container img {
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+
+.sign-in-btn {
+    padding: 25px;
+    line-height: 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.sign-in-btn:hover {
+    background-color: #00b9a4;
+}
+
+.sign-in-btn:active {
+    color: rgba(255, 255, 255, 0.6);
+}
