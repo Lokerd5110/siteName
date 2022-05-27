@@ -1,6 +1,24 @@
 {
   "dependencies": {
     "ejs": "^3.1.7",
-    "express": "^4.18.1"
-  }
+    "express": "^4.18.1",
+    "nedb": "^1.8.0"
+  },
+  "name": "our_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanislavfalkovskii/siteName.git"
+  },
+  "author": "Lokerd, Loxyface",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stanislavfalkovskii/siteName/issues"
+  },
+  "homepage": "https://github.com/stanislavfalkovskii/siteName#readme",
+  "description": ""
 }

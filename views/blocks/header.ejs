@@ -9,6 +9,9 @@
                 <div class="genres">
                     <h3>Жанры</h3>
                     <ul class="genres-list">
+                        <% genres.forEach(function(genre){ %>
+                            <li><a href="#"><%= genre.genreName %></a></li>
+                        <% }) %>
                     </ul>
                 </div>
             </li>
@@ -19,7 +22,25 @@
             <input type="text" class="search" placeholder="Поиск книг">
             <img src="/public/img/search.png" alt="icon">
         </div>
-        <a href="/sign-in" class = "sign-in-btn">Войти</a>
+        <button class="sign-in-btn">Войти</button>
+        <div class="sign-in-popup hidden">
+            <div class="dark-background"></div>
+            <form method="post">
+                <button class="close-btn" type="button">
+                    <img src="/public/img/close-btn.png" alt="Закрыть" width="40">
+                </button>
+                <label>
+                    Имя пользователя<br>
+                    <input type="text" name="username" id="username" />
+                </label>
+                <label>
+                    Пароль<br>
+                    <input type="password" name="password" id="password" />
+                </label>
+                <input type="submit" value="Войти" />
+            </form>
+        </div>
     </div>
 </div>
 <link rel="stylesheet" href="/public/css/header.css">
+<script src="/public/script/header-sign-in.js"></script>

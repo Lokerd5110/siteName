@@ -4,7 +4,7 @@
     </div>
     <div class="container">
         <% for(let i = 0; i < 8; i++) { %>
-            <%- include('../blocks/book-card.ejs') %>    
+            <%- include('../blocks/book-card.ejs', {datas: news[i]}) %>     
         <% } %>
     </div>
 </div>

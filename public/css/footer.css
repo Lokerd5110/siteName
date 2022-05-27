@@ -6,6 +6,7 @@
 .footer .container {
     display: flex;
     justify-content: space-between;
+    min-height: 0;
     height: 64px;
 }
 

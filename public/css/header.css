@@ -4,11 +4,14 @@
 }
 
 .header-logo {
+    position: relative;
+    top: -3px;
     height: 90px;
 }
 
 .header .container {
     display: flex;
+    min-height: 0;
     justify-content: space-between;
     align-items: center;
 }
@@ -41,7 +44,7 @@
     line-height: 40px;
 }
 
-.header-nav li:nth-of-type(3) {
+.header-nav li {
     position: relative;
 }
 
@@ -51,10 +54,11 @@
     left: 0;
     top: 90px;
     box-sizing: border-box;
-    padding: 20px 35px;
+    padding: 20px 25px;
     min-width: 250px;
     background-color: white;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    z-index: 100;
 }
 
 .header-nav li:hover .genres {
@@ -62,6 +66,7 @@
 }
 
 .header-nav .genres h3 {
+    color: black;
     padding: 0;
     margin: 0;
     margin-bottom: 10px;
@@ -78,7 +83,7 @@
 
 .header .genres-list li {
     margin: 0;
-    padding: 5px 0;
+    padding: 5px 10px;
 }
 
 .header .genres-list li:hover {
@@ -133,9 +138,8 @@
 
 .sign-in-btn {
     padding: 25px;
-    line-height: 40px;
-    display: inline-block;
-    text-decoration: none;
+    border: none;
+    background-color: #008D7C;
     color: white;
     font-size: 24px;
     line-height: 40px;
@@ -147,4 +151,98 @@
 
 .sign-in-btn:active {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.hidden {
+    display: none;
+}
+
+.sign-in-popup {
+    position: absolute;
+}
+
+.sign-in-popup .dark-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 200;
+}
+
+.sign-in-popup form {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: calc(50vh - 250px);
+    left: 35%;
+    z-index: 201;
+    width: 30%;
+    height: 500px;
+    padding: 50px 70px;
+    background-color: #008D7C;
+    border-radius: 50px;
+}
+
+.sign-in-popup form .close-btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.sign-in-popup form .close-btn:hover {
+    opacity: 0.6;
+}
+
+.sign-in-popup form label {
+    font-size: 30px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.sign-in-popup form label input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #ffffffa1;
+    padding: 0 20px;
+}
+
+.sign-in-popup form label input:focus {
+    background-color: #ffffff;
+}
+
+.sign-in-popup form input[type="submit"] {
+    height: 60px;
+    font-size: 30px;
+    line-height: 40px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #00b9a4;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.sign-in-popup form input[type="submit"]:hover {
+    background-color: #00b9a3e3;
+}
+
+.sign-in-popup form input[type="submit"]:active {
+    color: #ffffff80;
 }

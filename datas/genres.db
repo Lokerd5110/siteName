@@ -1,0 +1,11 @@
+{"genreName":"Мистика","genreClass":"Mistika","_id":"5GwnWeEFDadb1sjl"}
+{"genreName":"Драма","genreClass":"Drama","_id":"6DpcKNOtS21522Ph"}
+{"genreName":"Фэнтези","genreClass":"Fentezi","_id":"6U3SAszaR4Dzpdz7"}
+{"genreName":"Комедия","genreClass":"Komediya","_id":"6yOBwjBrK86nJXhs"}
+{"genreName":"Комикс","genreClass":"Komiks","_id":"8OkJRCU3DJRQScBV"}
+{"genreName":"Романтика","genreClass":"Romantika","_id":"NPhxd0aPFrGv7LT7"}
+{"genreName":"Роман","genreClass":"Roman","_id":"RxnNffagqw4fzJkb"}
+{"genreName":"Приключения","genreClass":"Priklyucheniya","_id":"TjpS907GvXJVJCN3"}
+{"genreName":"Боевик","genreClass":"Boevik","_id":"bjnHV8mqh9ph6l4A"}
+{"genreName":"Детектив","genreClass":"Detektiv","_id":"qhZtViDIK0cHREQ0"}
+{"$$indexCreated":{"fieldName":"genreName","unique":true,"sparse":false}}

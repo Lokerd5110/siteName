@@ -1,11 +1,11 @@
 
 <div class="about-book">
         <div class="picture">
-            <img src="/public/img/big-book.png" alt="Мартин Иден">
+            <img src= <%= data.img %> alt=<%= data.name %> width= "340">
         </div>
             <div class="autor-and-name">
-                <p class="book-name">История моего безумия</p>
-                <p class="autor-name">Джек Лондон</p>
+                <p class="book-name"><%= data.name %></p>
+                <p class="autor-name"><%= data.author %></p>
             </div>
                 <div class="rating">
                     <div class="general-mark">
@@ -26,52 +26,41 @@
                 <table>
                     <tr>
                         <td>ID товара</td>
-                        <td>1</td>
+                        <td><%= data.ID %></td>
                     </tr>
                     <tr>
                         <td>Издательство</td>
-                        <td>Эксмо</td>
+                        <td><%= data.publisher %></td>
                     </tr>
                     <tr>
                         <td>Год издания</td>
-                        <td>1983</td>
+                        <td><%= data.creatingDate %></td>
                     </tr>
                     <tr>
                         <td>Кол-во страниц</td>
-                        <td>431</td>
+                        <td><%= data.nOfPages %></td>
                     </tr>
                     <tr>
                         <td>Тип обложки</td>
-                        <td>Твёрдая</td>
+                        <td><%= data.binding %></td>
                     </tr>
                     <tr>
                         <td>Возрастные<br>ограничения</td>
-                        <td>16+</td>
+                        <td><%= data.restriction %></td>
                     </tr>
                 </table>
             </div>
         
         <div class="description">
             <p class="description-name">Описание</p>
-            <p class="description-concretely">«Когда роман будет закончен, я умру»,
-                — так начал известный писатель Сэмюэль Сандерсон свою книгу.
-                Когда-то он был обычным человеком, любил свою жену Дану и дочь
-                Мэйан и был уверен, что семья — самое ценное, что у него есть.                    
-                Но слава и богатство все изменили, этого испытания Сандерсон
-                не выдержал. Его жизнь отныне протекала в свете софитов, под
-                щелчки фотокамер. Поклонницы считали величайшим счастьем,
-                если он снисходил до интрижки, журналисты почитали за честь
-                взять у него интервью. В этом угаре остановиться, подумать
-                было немыслимо. И вот результат — он потерял все, что
-                раньше так ценил, его жизнь оказалась под угрозой. 
-                Неужели плата за ошибки может быть столь высокой?</p>
+            <p class="description-concretely"> <%- data.description %> </p>
         </div>
         <div class="button-menu">
             <div class="availability">
                 <img src="/public/img/availability.png" alt="Галочки">
                 <p>В наличии</p>
             </div>
-            <p class="price">657&#8381;</p>
+            <p class="price"><%= data.price %></p>
             <a href="/cart" class="in-basket">В корзину</a>
             <a class="btn-like" href="#"><img src="/public/img/mark.png" alt="В закладки" height="53" ></a>
         </div>

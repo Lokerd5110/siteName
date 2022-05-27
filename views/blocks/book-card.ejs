@@ -1,11 +1,11 @@
 <div class="book-card">
-    <a href="/product"><img class" src="/public/img/book.png" alt="Книга"></a>
+    <a href= <%="/product/" + datas.id %>><img class" src=<%= datas.img %> alt="Книга" height="270"></a>
     <div>
-        <a href="/product"><p class="book-name">История моего безумия</p></a>
-        <a href="/product"><p class="autor-name">Джек Лондон</p></a>
+        <a href="/product"><p class="book-name"><%= datas.name %></p></a>
+        <a href="/product"><p class="autor-name"><%= datas.author %></p></a>
     </div>
     <a class="in-basket" href="/cart">
-            <p class="price-in-card">657&#8381;</p>   
+            <p class="price-in-card"><%= datas.price %></p>   
         В корзину
     </a>
     <button class="in-mark">
