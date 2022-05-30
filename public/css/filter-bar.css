@@ -1,0 +1,45 @@
+.filters {
+    color: black;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.filters .right-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.filters p {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.filters .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.filters .filter-list button {
+    padding: 10px 25px;
+    background: none;
+    font-weight: bold;
+    border: 3px solid #008D7C;
+    color: #008D7C;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.filters .filter-list button:hover {
+    opacity: 0.8;
+}
+
+.filters .filter-list .active-button {
+    color: white;
+    background-color: #008D7C
+}

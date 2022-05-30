@@ -1,0 +1,30 @@
+.news {
+    position: relative;
+    padding: 60px 40px 40px;
+    background-color: rgba(0, 141, 124, 0.35);
+}
+
+.hidden{
+    display: none;
+}
+
+.news .container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+
+.news h2{
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+
+    color: #006D5C;
+}
+
+.news .book-card .stroke{
+    display: none;
+}

@@ -22,7 +22,8 @@ genres.find({}, function(err, docs) {
 
 module.exports = {
     db: genres,
-    genresList: genresList 
+    genresList: genresList,
+	translit: translit
 }
 
 function translit(word){

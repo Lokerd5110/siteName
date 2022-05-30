@@ -22,9 +22,15 @@ margin-bottom: 5px;
 
 .book-card .book-name {   
     text-align: left;
-    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: #2F2F2F;
 }
+.book-card .book-name:hover {
+    overflow:visible;
+}
+
 
 .book-card .autor-name{
     text-align: left;

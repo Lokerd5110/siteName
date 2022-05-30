@@ -19,7 +19,17 @@ app.get('/cart', function(req, res){
 });
 
 app.get('/product/:id', function(req, res){
-    res.render('product', {genres: genres.genresList, data: products.productsList.find(product => product.ID == req.params.id)});
+    res.render('product', {
+        genres: genres.genresList, 
+        data: products.productsList.find(product => product.ID == req.params.id)
+    });
+});
+
+app.get('/catalog', function(req, res){
+    res.render('catalog', {
+        genres: genres.genresList, 
+        news: products.smallList
+    });
 });
 
 app.listen('3000');

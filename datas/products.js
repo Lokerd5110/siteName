@@ -36,7 +36,8 @@ let createMassive = function (docs, massiveName, all) {
                 author: d.author,
                 price: d.price,
                 img: d.img,
-                id: d.ID
+                id: d.ID,
+                genres: d.genres
             }
             massiveName.push(li);
         }

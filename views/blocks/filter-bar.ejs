@@ -1,0 +1,9 @@
+<div class="filters">
+    <p>Жанры: </p>
+    <ul class="filter-list">
+        <% genres.forEach( (genre) => { %>
+            <li><button class=<%= genre.genreClass %>><%= genre.genreName %></button></li>
+        <% }) %>
+    </ul>
+</div>
+<link rel="stylesheet" href="/public/css/filter-bar.css">

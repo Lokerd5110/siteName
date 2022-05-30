@@ -1,0 +1,8 @@
+<div class="news">
+    <div class="container">
+        <% news.forEach((cardData) => { %>
+            <%- include('../blocks/book-card.ejs', {datas: cardData}) %>     
+        <% }); %>
+    </div>
+</div>
+<link rel="stylesheet" href="/public/css/catalog-cards.css">
