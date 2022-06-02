@@ -2,7 +2,6 @@
     display: grid;
     grid-template-areas: 
     "img name name"
-    "img rait rait"
     "img tab bt"
     "text text text"
     ;

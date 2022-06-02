@@ -24,9 +24,10 @@
     line-height: 23px;
 }
 
-.new-arrive button{
+.new-arrive .details{
     width: 282px;
-    height: 55px;  
+    padding: 15px 0;
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     border: none;

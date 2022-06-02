@@ -73,7 +73,7 @@ margin-bottom: 5px;
     box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10px;
+    padding: 2px 10px;
     width: 205px;
     height: 40px;
     border: none;
@@ -92,4 +92,11 @@ margin-bottom: 5px;
     background-color: rgba(0, 0, 0, 0.35);
     right: -37px;
     top: 57px;
+}
+
+.delete-liked {
+    filter: invert(1);
+    position: absolute;
+    top: -30px;
+    right: -15px;
 }

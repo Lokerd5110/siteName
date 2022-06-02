@@ -1,0 +1,40 @@
+.sign-inich {
+    box-sizing: border-box;
+    background-color: #008D7C;
+    height: 100vh;
+    display: flex;
+    padding: 100px 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sign-inich form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sign-inich .section-header {
+    color: white;
+}
+
+.sign-inich input {
+    box-sizing: border-box;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 20px 35px;
+    width: 700px;
+    margin: 30px 0;
+    background-color: rgba(196, 196, 196, 0.3);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+}
+
+.sign-inich .alert {
+    color: red;
+    font-size: 20px;
+}

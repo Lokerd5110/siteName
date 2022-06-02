@@ -1,0 +1,49 @@
+.liked {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-rows: 380px 380px;
+    grid-template-areas: 
+        't t t t'
+        '. . . .';
+    row-gap: 30px;
+    justify-content: space-evenly;
+}
+
+.liked .container {
+    border: 1px solid transparent;
+}
+
+.liked .section-header {
+    text-align: center;
+}
+
+.liked-message {
+    grid-area: t;
+    justify-self: center;
+    margin-top: 30%;
+    background-color: rgba(0, 141, 124, 0.35);
+    width: 700px;
+    padding: 50px 70px;
+    height: 130px;
+    border-radius: 30px;
+    color: #008D7C;
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.liked .book-card {
+    height: 380px;
+}
+
+.liked .book-card .stroke{
+    display: none;
+}
+
+.liked .book-card .in-mark {
+    display: none;
+}
+
+.liked .book-card .delete-liked {
+    display: block;
+}

@@ -1,18 +1,17 @@
 <div class="like-card">
     <div class="like-content">
         <div class="picture">
-            <a href="#">
-                <img src="/public/img/martin-book.png" alt="Книга">
+            <a href="<%= /product/ + datas.ID %>">
+                <img src=<%= datas.img %> alt="Книга" height="230">
             </a>
         </div>
         <div class="text-content">
-            <ul class="teg-list">
-                <li class="teg-name">Классика</li>
-            </ul>
-            <p class="book-name">История моего безумия</p>
-            <p class="autor-name">Джек Лондон</p>
+            <p class="book-name"><%= datas.name %></p>
+            <p class="autor-name"><%= datas.author %></p>
             <ul class="genre-list">
-                <li class="genre-name">Драма</li>
+                <% datas.genres.forEach((genre) => { %>
+                    <li class="genre-name"><%= genre %></li>
+                <% }); %>
             </ul>
         </div>
     </div>
@@ -21,10 +20,10 @@
             <img src="/public/img/availability.png" alt="Галочки">
             <p>В наличии</p>
         </div>
-        <a class="busket-delete" href="#">
+        <a class="busket-delete" href="<%= /delete-from-cart/ + datas.ID %>">
             <img src="/public/img/busket-delete.png" alt="Мусорка">
         </a>
-        <p class="like-price">657&#8381;</p>
+        <p class="like-price"><%= datas.price %></p>
         <button class="in-basket">В закладки</button>
     </div>
     <div class="stroke"></div>

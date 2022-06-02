@@ -7,21 +7,6 @@
                 <p class="book-name"><%= data.name %></p>
                 <p class="autor-name"><%= data.author %></p>
             </div>
-                <div class="rating">
-                    <div class="general-mark">
-                        <img src="/public/img/green-star.png" alt="Звезда" height="34" width="38">
-                        <p class="rating-number">4</p>
-                    </div>
-                    <div class="stars">
-                        <p>Оценить</p>
-                        <% for (let i = 0; i < 5; i++) { %> 
-                            <img src="/public/img/gray-star.png" alt="Звезда" height="34" width="38">
-                        <% } %>
-                    </div>
-                    <div class="number-of-bought">
-                        <p>Купили более 10314 раз</p>
-                    </div>
-            </div>
             <div class="table-about">
                 <table>
                     <tr>
@@ -61,7 +46,7 @@
                 <p>В наличии</p>
             </div>
             <p class="price"><%= data.price %></p>
-            <a href="/cart" class="in-basket">В корзину</a>
+            <a href=<%= `/add-to-cart/${data.ID}` %> class="in-basket">В корзину</a>
             <a class="btn-like" href="#"><img src="/public/img/mark.png" alt="В закладки" height="53" ></a>
         </div>
 </div>

@@ -15,29 +15,49 @@
                     </ul>
                 </div>
             </li>
-            <li><a href="/liked">Избранное</a></li>
-            <li><a href="/cart">Корзина</a></li>
+            <li><a href="/liked">
+                Избранное
+                <% if(user != null) { %> 
+                    <span class="amount"><%= user.liked.length %></span>
+                <% } %>
+            </a></li>
+            <li><a href="/cart">
+                Корзина
+                <% if(user != null) { %> 
+                    <span class="amount"><%= user.cart.length %></span>
+                <% } %>
+            </a></li>
         </ul>
         <div class = "search-container">
             <input type="text" class="search" placeholder="Поиск книг">
             <img src="/public/img/search.png" alt="icon">
         </div>
-        <button class="sign-in-btn">Войти</button>
+        <% if(user === null) { %>
+            <button class="sign-in-btn">Войти</button>
+        <% } else { %>
+            <div class="user-data">
+                <form method="post" action="/sign-out">
+                    <button class="sign-out-btn">Выход</button>
+                </form>
+                <h1 class="section-header"><%= user.username %></h1>
+            </div>
+        <% } %>
         <div class="sign-in-popup hidden">
             <div class="dark-background"></div>
-            <form method="post">
+            <form method="post" name="signIn" action="/sign-in">
                 <button class="close-btn" type="button">
                     <img src="/public/img/close-btn.png" alt="Закрыть" width="40">
                 </button>
                 <label>
-                    Имя пользователя<br>
-                    <input type="text" name="username" id="username" />
+                    E-Mail<br>
+                    <input type="email" name="username" id="username" required />
                 </label>
                 <label>
                     Пароль<br>
-                    <input type="password" name="password" id="password" />
+                    <input type="password" name="password" id="password" required minlength="8"/>
                 </label>
-                <input type="submit" value="Войти" />
+                <input type="submit" id="submit" value="Войти" />
+                <a class="register" href="/register">Зарегестрироваться</a>
             </form>
         </div>
     </div>

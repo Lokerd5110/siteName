@@ -1,5 +1,8 @@
+const { resolveInclude } = require('ejs');
 const Datastore = require('nedb');
 let users = new Datastore({ filename: 'datas/users.db', autoload: true });
+
+users.ensureIndex({fieldName: 'username', unique: true});
 
 let createUser = function(username, password) {
     let user = {
@@ -12,19 +15,27 @@ let createUser = function(username, password) {
     users.insert(user);
 }
 
-nowUser = {
 
-};
+let logUser = function (user, password) {
+    let promise = new Promise((resolve, reject) => {
+        users.findOne({username: user}, function(err, doc) {
+            if(doc.password === password) {
+                resolve(doc);
+            } else {
+                reject();
+            }
+        });
+    }); 
+    return promise;
+}
 
-let findUser = function(user){
-    users.findOne({username: user}, function(err, doc) {
-        nowUser = doc;
-    });
+let updateUser = function (user) {
+    users.update({username: user.username}, user, {});
 }
 
 module.exports = {
     db: users,
-    nowUser: nowUser,
-    findUser: findUser,
-    createUser: createUser
+    logUser: logUser,
+    createUser: createUser,
+    updateUser: updateUser
 }

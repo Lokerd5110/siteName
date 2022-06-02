@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/base.css">
+    <link rel="stylesheet" href="/public/css/sign-in.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sign-inich">
+        <a href="/"><img src="/public/img/logo.png" alt="Логотип" height="200"></a>
+        <form method="post" name="signIn" action="/sign-in">
+            <p class="alert section-header">Неправильный логин и/или пароль</p>
+            <label class="section-header">
+                E-Mail<br>
+                <input type="email" name="username" id="username" required />
+            </label>
+            <label class="section-header">
+                Пароль<br>
+                <input type="password" name="password" id="password" required minlength="8"/>
+            </label>
+                <input type="submit" id="submit" value="Войти" />
+        </form>
+    </div>
+</body>
+</html>

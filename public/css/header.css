@@ -26,6 +26,24 @@
 
 .header-nav li {
     padding: 25px;
+    position: relative;
+}
+
+.header-nav li .amount {
+    position: absolute;
+    background-color: rgba(255, 255, 0, 0.712);
+    top: 10px;
+    right: 0px;
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
 }
 
 .header-nav li:hover {
@@ -143,6 +161,7 @@
     color: white;
     font-size: 24px;
     line-height: 40px;
+    width: 140px;
 }
 
 .sign-in-btn:hover {
@@ -245,4 +264,48 @@
 
 .sign-in-popup form input[type="submit"]:active {
     color: #ffffff80;
+}
+
+.sign-in-popup .alert {
+    color: red;
+    font-size: 15px;
+    line-height: 20px;
+    position: absolute;
+    top: 165px;
+}
+
+.user-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 140px;
+}
+
+.user-data .section-header {
+    font-size: 16px;
+    line-height: 20px;
+    border-left: 1px solid white;
+    color: white;
+    line-height: 30px;
+    padding-left: 5px;
+    margin-left: 5px;
+    width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-data .section-header:hover {
+    overflow:visible;
+}
+
+.user-data .sign-out-btn {
+    background: none;
+    color: white;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: bold;
 }

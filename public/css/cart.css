@@ -1,0 +1,19 @@
+.cart-message {
+    background-color: rgba(0, 141, 124, 0.35);
+    width: 700px;
+    padding: 50px 70px;
+    margin-left: calc(50% - 420px);
+    margin-top: 20%;
+    border-radius: 30px;
+    color: #008D7C;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.container {
+    border: 1px solid transparent;
+}
