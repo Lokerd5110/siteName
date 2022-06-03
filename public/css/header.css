@@ -245,7 +245,8 @@
     background-color: #ffffff;
 }
 
-.sign-in-popup form input[type="submit"] {
+.sign-in-popup form input[type="submit"],
+.sign-in-popup form .register {
     height: 60px;
     font-size: 30px;
     line-height: 40px;
@@ -256,6 +257,8 @@
     background-color: #00b9a4;
     margin-top: 40px;
     cursor: pointer;
+    text-align: center;
+    padding: 10px;
 }
 
 .sign-in-popup form input[type="submit"]:hover {

@@ -18,6 +18,8 @@
 }
 
 .liked-message {
+    position: relative;
+    bottom: 100px;
     grid-area: t;
     justify-self: center;
     margin-top: 30%;

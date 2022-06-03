@@ -15,7 +15,11 @@
 <body>
     <div class="sign-inich">
         <a href="/"><img src="/public/img/logo.png" alt="Логотип" height="200"></a>
-        <form method="post" name="signIn" action="/sign-in">
+        <div class="form-selector">
+            <button id="sign-in-btn">Войти</button>
+            <button id="register-btn">Зарегестрироваться</button>
+        </div>
+        <form method="post" name="signIn" action="/sign-in" class="sign-in-form">
             <p class="alert section-header">Неправильный логин и/или пароль</p>
             <label class="section-header">
                 E-Mail<br>
@@ -26,6 +30,21 @@
                 <input type="password" name="password" id="password" required minlength="8"/>
             </label>
                 <input type="submit" id="submit" value="Войти" />
+        </form>
+        <form method="post" name="signIn" action="/register" class="register-form hidden">
+            <label class="section-header">
+                E-Mail<br>
+                <input type="email" name="username" id="username" required />
+            </label>
+            <label class="section-header">
+                Пароль<br>
+                <input type="password" name="password" id="password" required minlength="8"/>
+            </label>
+            <label class="section-header">
+                Повторите пароль<br>
+                <input type="password" id="password-check" required minlength="8"/>
+            </label>
+                <input type="submit" id="submit" value="Зарегистрироваться" />
         </form>
     </div>
 </body>

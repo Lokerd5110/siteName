@@ -1,2 +1,5 @@
 {"username":"lokerd@g.ru","password":"147258369","liked":[],"cart":[],"_id":"Az8Jyk5j039dhU1J"}
 {"$$indexCreated":{"fieldName":"username","unique":true,"sparse":false}}
+{"username":"lokerd@g.ru","password":"147258369","liked":[],"cart":["1"],"_id":"Az8Jyk5j039dhU1J"}
+{"username":"lokerd@g.ru","password":"147258369","liked":[],"cart":[],"_id":"Az8Jyk5j039dhU1J"}
+{"username":"lokerd@g.ru","password":"147258369","liked":["1"],"cart":[],"_id":"Az8Jyk5j039dhU1J"}

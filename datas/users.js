@@ -19,11 +19,16 @@ let createUser = function(username, password) {
 let logUser = function (user, password) {
     let promise = new Promise((resolve, reject) => {
         users.findOne({username: user}, function(err, doc) {
-            if(doc.password === password) {
-                resolve(doc);
+            if(doc != null) {
+                if(doc.password === password) {
+                    resolve(doc);
+                } else {
+                    reject();
+                }
             } else {
                 reject();
             }
+            
         });
     }); 
     return promise;

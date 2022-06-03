@@ -47,7 +47,7 @@
             </div>
             <p class="price"><%= data.price %></p>
             <a href=<%= `/add-to-cart/${data.ID}` %> class="in-basket">В корзину</a>
-            <a class="btn-like" href="#"><img src="/public/img/mark.png" alt="В закладки" height="53" ></a>
+            <a class="btn-like" href=<%= `/add-to-liked/${data.ID}` %>><img src="/public/img/mark.png" alt="В закладки" height="53" ></a>
         </div>
 </div>
 

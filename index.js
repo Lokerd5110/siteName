@@ -18,12 +18,6 @@ app.get('/', function(req, res){
     });
 });
 
-let string = 'lol';
-string.forEach((letter) => {
-    letter = letter * 8;
-})
-console.log(string);
-
 app.get('/cart', function(req, res){
     res.render('cart', {
         genres: genres.genresList,
